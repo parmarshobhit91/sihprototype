@@ -1,0 +1,329 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #B00202;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #B00202;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* card component */
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+
+    display: inline-block;
+  border: 1px solid rgb(124, 119, 119);
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-title {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-btn, .buy-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+    background-color: #2980b9;
+}
+
+.buy-btn:hover {
+    background-color: #e74c3c;
+}
+.parentproductscard{
+    border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center
+}
+
+/* contact page */
+.contact-section {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.contact-form button:hover {
+    background-color: #2980b9;
+}
+/* home page modified */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* New Arrivals Section */
+.new-arrivals {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.view-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-more-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Daily Posts Section */
+.daily-posts {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.daily-posts article {
+    margin-bottom: 15px;
+}
+
+.daily-posts h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.daily-posts p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* commmunity page */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.user-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.user-profile {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.user-profile h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.user-profile p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.collection {
+    margin-top: 15px;
+}
+
+.collection h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.collection img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* search bar products */
+/* Search bar container styling */
+.search-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Search bar input styling */
+#search-bar {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Search bar focus effect */
+#search-bar:focus {
+    border-color: #008cba;
+    box-shadow: 0 0 5px rgba(0, 140, 186, 0.5);
+}
+
+/* profile option in header */

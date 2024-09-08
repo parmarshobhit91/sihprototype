@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Philatelist Web Community</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>National Philatelist Web Community</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="digitalarchive.html">Digital Archive</a></li>
+            <li><a href="daily-posts.html">Daily Posts</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out to us using the form below or through our contact details.</p>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> contact@philatelistwebcommunity.in</p>
+            <p><strong>Phone:</strong> +91 12345 67890</p>
+            <p><strong>Address:</strong> 123 Stamp Lane, New Delhi, India</p>
+        </div>
+
+        <form class="contact-form" action="submit_form.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 National Philatelist Web Community</p>
+    </footer>
+</body>
+</html>

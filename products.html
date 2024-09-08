@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Philatelist Web Community</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="digitalarchive.html">Digital Archive</a></li>
+            <li><a href="daily-posts.html">Daily Posts</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Products</h2>
+        <p>Explore our vast collection of philatelic products.</p>
+          <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search for products..." onkeyup="filterProducts()">
+    </div>
+
+</section>
+
+<script>
+    function filterProducts() {
+        let input = document.getElementById('search-bar').value.toLowerCase();
+        let productCards = document.getElementsByClassName('product-card');
+        
+        for (let i = 0; i < productCards.length; i++) {
+            let title = productCards[i].getElementsByClassName('product-title')[0];
+            if (title.innerText.toLowerCase().indexOf(input) > -1) {
+                productCards[i].style.display = "";
+            } else {
+                productCards[i].style.display = "none";
+            }
+        }
+    }
+</script>
+        <div class="parentproductscard">
+            <div class="product-card">
+                <img src="stamps/stamp1.webp" alt="Product Image" class="product-image">
+                <h2 class="product-title">Tea Stamp</h2>
+                <p class="product-description">INDIA 1993 - Tea Production, 1 Value, MNH, S.G. 1557</p>
+                <p class="product-price">₹ 220</p>
+                <div class="button-container">
+                    <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                    <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+                </div>
+            </div>
+        <div class="product-card">
+            <img src="stamps/stamp2.webp" alt="Product Image" class="product-image">
+            <h2 class="product-title">Tea Stamp</h2>
+            <p class="product-description">INDIA 1993 - Tea Production, 1 Value, MNH, S.G. 1557</p>
+            <p class="product-price">₹ 220</p>
+            <div class="button-container">
+                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="stamps/stamp3.webp" alt="Product Image" class="product-image">
+            <h2 class="product-title">Stamp Title</h2>
+            <p class="product-description">This is a beautiful and rare stamp collection.</p>
+            <p class="product-price">₹ 499</p>
+            <div class="button-container">
+                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="stamps/stamp4.webp" alt="Product Image" class="product-image">
+            <h2 class="product-title">Ram Mandir</h2>
+            <p class="product-description">This is a beautiful and rare stamp collection.</p>
+            <p class="product-price">₹ 499</p>
+            <div class="button-container">
+                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="stamps/stamp5.webp" alt="Product Image" class="product-image">
+            <h2 class="product-title">Stamp Title</h2>
+            <p class="product-description">This is a beautiful and rare stamp collection.</p>
+            <p class="product-price">₹ 499</p>
+            <div class="button-container">
+                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="stamps/stamp6.webp" alt="Product Image" class="product-image">
+            <h2 class="product-title">Stamp Title</h2>
+            <p class="product-description">This is a beautiful and rare stamp collection.</p>
+            <p class="product-price">₹ 499</p>
+            <div class="button-container">
+                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="stamps/stamp7.webp" alt="Product Image" class="product-image">
+            <h2 class="product-title">Stamp Title</h2>
+            <p class="product-description">This is a beautiful and rare stamp collection.</p>
+            <p class="product-price">₹ 499</p>
+            <div class="button-container">
+                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="stamps/stamp8.webp" alt="Product Image" class="product-image">
+            <h2 class="product-title">Stamp Title</h2>
+            <p class="product-description">This is a beautiful and rare stamp collection.</p>
+            <p class="product-price">₹ 499</p>
+            <div class="button-container">
+                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="stamps/stamp9.webp" alt="Product Image" class="product-image">
+            <h2 class="product-title">Stamp Title</h2>
+            <p class="product-description">This is a beautiful and rare stamp collection.</p>
+            <p class="product-price">₹ 499</p>
+            <div class="button-container">
+                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="stamps/stamp10.webp" alt="Product Image" class="product-image">
+            <h2 class="product-title">Stamp Title</h2>
+            <p class="product-description">This is a beautiful and rare stamp collection.</p>
+            <p class="product-price">₹ 499</p>
+            <div class="button-container">
+                <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+
+    </div>
+    
+        <script src="script.js"></script>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 National Philatelist Web Community</p>
+    </footer>
+</body>
+</html>

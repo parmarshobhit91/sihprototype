@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Orders - Philatelist Web Community</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Orders</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="digitalarchive.html">Digital Archive</a></li>
+            <li><a href="daily-posts.html">Daily Posts</a></li>
+        </ul>
+    </nav>
+
+    <section class="orders-section">
+        <h2>Your Orders</h2>
+        <div id="order-list">
+            <!-- Orders will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 National Philatelist Web Community</p>
+    </footer>
+
+    <script>
+        // Example order data (this would come from a server or localStorage in a real app)
+        const orders = [
+            {
+                orderNumber: '12345',
+                productName: 'Rare Indian Stamp - 1971',
+                price: 1500,
+                orderDate: '2024-09-01',
+                tracking: 'In Transit',
+                canCancel: true
+            },
+            {
+                orderNumber: '12346',
+                productName: 'British-Era Postcard - 1930',
+                price: 2500,
+                orderDate: '2024-09-02',
+                tracking: 'Delivered',
+                canCancel: false
+            }
+        ];
+
+        // Function to render orders
+        function renderOrders() {
+            const orderList = document.getElementById('order-list');
+            orderList.innerHTML = ''; // Clear existing orders
+
+            if (orders.length === 0) {
+                orderList.innerHTML = '<p>No orders found.</p>';
+            } else {
+                orders.forEach(order => {
+                    const orderItem = document.createElement('div');
+                    orderItem.classList.add('order-item');
+
+                    orderItem.innerHTML = `
+                        <h3>Order #${order.orderNumber}</h3>
+                        <p><strong>Product Name:</strong> ${order.productName}</p>
+                        <p><strong>Price:</strong> ₹${order.price}</p>
+                        <p><strong>Order Date:</strong> ${order.orderDate}</p>
+                        <p><strong>Tracking:</strong> ${order.tracking}</p>
+                        <button class="cancel-btn" ${order.canCancel ? '' : 'disabled'}>Cancel Order</button>
+                    `;
+
+                    orderList.appendChild(orderItem);
+                });
+            }
+        }
+
+        // Call the function to render the orders when the page loads
+        window.onload = renderOrders;
+    </script>
+</body>
+</html>

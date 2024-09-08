@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - Philatelist Web Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for vlogs section */
+        .vlog-section {
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+
+        .vlog-post {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .vlog-post img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .vlog-post h4 {
+            margin: 10px 0;
+        }
+
+        .vlog-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .vlog-buttons button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .like-btn {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .share-btn {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .comment-btn {
+            background-color: #17a2b8;
+            color: white;
+        }
+
+        .comment-section {
+            margin-top: 15px;
+        }
+
+        .comment {
+            margin-top: 10px;
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .comment input[type="text"] {
+            width: calc(100% - 110px);
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        .comment button {
+            padding: 5px 10px;
+        }
+
+        /* Layout adjustments */
+        .community-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .user-grid {
+            width: 30%;
+            margin-left: 20px;
+        }
+
+        .messages-section {
+            width: 30%;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            text-align: left;
+        }
+
+        .search-bar {
+            margin: 20px auto;
+            max-width: 900px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-bar input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px 0 0 5px;
+            border: 1px solid #ddd;
+        }
+
+        .search-bar button {
+            padding: 10px;
+            border-radius: 0 5px 5px 0;
+            border: 1px solid #ddd;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Philatelists Community</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="digitalarchive.html">Digital Archive</a></li>
+            <li><a href="daily-posts.html">Daily Posts</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+
+    <section class="community-section">
+        <div class="user-grid">
+            <h2>Our Community</h2>
+            <p>Explore, interact, and follow fellow philatelists.</p>
+
+            <div class="user-profile">
+                <img src="stamps/johndoe.jpg " alt="User 1">
+                <h3>John Doe</h3>
+                <p>Collector of rare Indian stamps.</p>
+                <button class="follow-btn">Follow</button>
+                <button class="add-friend-btn">Add Friend</button>
+                <button class="chat-btn">Chat</button>
+                <div class="collection">
+                    <h4>Stamp Collection:</h4>
+                    <img src="stamps/s1.webp" alt="Stamp 1">
+                    <img src="stamps/s2.webp" alt="Stamp 2">
+                    <img src="stamps/s3.webp" alt="Stamp 3">
+                </div>
+            </div>
+
+            <div class="user-profile">
+                <img src="stamps/janesmith.jpg" alt="User 2">
+                <h3>Jane Smith</h3>
+                <p>Focus on British-era postal history.</p>
+                <button class="follow-btn">Follow</button>
+                <button class="add-friend-btn">Add Friend</button>
+                <button class="chat-btn">Chat</button>
+                <div class="collection">
+                    <h4>Stamp Collection:</h4>
+                    <img src="stamps/s4.webp" alt="Stamp 1">
+                    <img src="stamps/s5.webp" alt="Stamp 2">
+                    <img src="stamps/s6.webp" alt="Stamp 3">
+                </div>
+            </div>
+
+            <div class="user-profile">
+                <img src="stamps/ravipatel.jpg" alt="User 3">
+                <h3>Ravi Patel</h3>
+                <p>Enthusiast of modern Indian stamps.</p>
+                <button class="follow-btn">Follow</button>
+                <button class="add-friend-btn">Add Friend</button>
+                <button class="chat-btn">Chat</button>
+                <div class="collection">
+                    <h4>Stamp Collection:</h4>
+                    <img src="stamps/s7.webp" alt="Stamp 1">
+                    <img src="stamps/s8.webp" alt="Stamp 2">
+                    <img src="stamps/s10.webp" alt="Stamp 3">
+                </div>
+            </div>
+        </div>
+
+        <div class="vlog-section">
+            <h2>Latest Vlogs</h2>
+
+            <div class="vlog-post">
+                <img src="stamps/dailypoststamp1.webp" alt="Vlog 1 Thumbnail">
+                <h4>Exploring Rare Stamps with John Doe</h4>
+                <p>Join John as he takes you through his collection of rare stamps from the 19th century.</p>
+                <div class="vlog-buttons">
+                    <button class="like-btn" onclick="likeVlog()">Like</button>
+                    <button class="share-btn" onclick="shareVlog()">Share</button>
+                    <button class="comment-btn" onclick="toggleCommentSection(this)">Comment</button>
+                </div>
+                <div class="comment-section" style="display: none;">
+                    <input type="text" placeholder="Write a comment...">
+                    <button onclick="postComment()">Post</button>
+                    <div class="comments-list">
+                        <div class="comment">Great vlog! - <strong>Jane Smith</strong></div>
+                        <div class="comment">Very informative, thanks! - <strong>Ravi Patel</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More vlog-post elements can be added here -->
+
+        </div>
+
+        <div class="messages-section">
+            <h2>Messages</h2>
+            <div class="messages-list">
+                <div class="message"><strong>John Doe:</strong> Hi there! Interested in your latest post.</div>
+                <div class="message"><strong>Jane Smith:</strong> Thanks for the info on the British stamps!</div>
+                <div class="message"><strong>Ravi Patel:</strong> Great collection you have!</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 National Philatelist Web Community</p>
+    </footer>
+
+    <script>
+        // Placeholder for follow, add friend, and chat functionality
+        const followButtons = document.querySelectorAll('.follow-btn');
+        const friendButtons = document.querySelectorAll('.add-friend-btn');
+        const chatButtons = document.querySelectorAll('.chat-btn');
+
+        followButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Followed!');
+            });
+        });
+
+        friendButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Friend Request Sent!');
+            });
+        });
+
+        chatButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Starting Chat...');
+            });
+        });
+
+        function likeVlog() {
+            alert('Liked!');
+        }
+
+        function shareVlog() {
+            alert('Shared!');
+        }
+
+        function toggleCommentSection(button) {
+            const commentSection = button.closest('.vlog-post').querySelector('.comment-section');
+            commentSection.style.display = commentSection.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function postComment() {
+            alert('Comment Posted!');
+        }
+    </script>
+</body>
+</html>
